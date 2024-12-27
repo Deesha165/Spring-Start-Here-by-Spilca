@@ -1,0 +1,4 @@
+- it has two scenarios:
+1- Integration between two (or more) objects of your app. Testing that the objects interact correctly helps you identify problems in how they collaborate if you change one of them. 
+2- Integration of an object of your app with some capability the framework enhances it with. Testing how an object interacts with some capability the framework provides helps you identify issues that can occur when you upgrade the framework to a new version. The integration test helps you immediately identify if something changed in the framework and the capability the object relies on doesn’t work the same way.
+3- integration of the app with its persistence layer (the database). Testing how the repository works with the database ensures you quickly identify problems that might occur when upgrading or changing a dependency that helps your app work with persisted data (such as the JDBC driver).

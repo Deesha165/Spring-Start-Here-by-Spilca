@@ -1,0 +1,1 @@
+- A continuous integration tool like Jenkins is software we use to execute the steps needed to build and sometimes install the apps we implement during the development process. This CI tool also runs the tests and notifies the developers if something has been broken 

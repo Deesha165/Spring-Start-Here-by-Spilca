@@ -1,0 +1,4 @@
+- A template engine is a dependency that provides your app with the capability to easily get the data the controller sends and display it on the view like Thymleaf.
+- The client can send data to the server through request parameters or path variables. A controller’s action gets the details the client sends in parameters annotated with @RequestParam or @PathVariable.
+- A request parameter can be optional. 
+- You should only use path variables for mandatory data the client sends.

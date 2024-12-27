@@ -1,0 +1,10 @@
+- Spring Data is a Spring ecosystem project that helps us more easily implement a Spring app’s persistence layer. Spring Data provides an abstraction layer over multiple persistence technologies and facilitates the implementation by providing a common set of contracts.
+- With Spring Data, we implement repositories through interfaces that extend standard Spring Data contracts: – Repository, which doesn’t provide any persistence operation – CrudRepository, which provides simple CREATE, READ, UPDATE, DELETE (CRUD) operations – PagingAndSortingRepository, which extends CrudRepository and adds operations for the pagination and sorting of the fetched records
+- You use the @Query annotation with the Spring Data repository method to define the SQL query your app executes for that specific operation.
+- If you declare a method and don’t explicitly specify a query with the @Query annotation, Spring Data will translate the method’s name into a SQL query. The method name needs to be defined based on Spring Data rules to understand and translate it into the correct query. If Spring Data cannot solve the method name, the application fails to start and throws an exception.
+- It is preferable to use the @Query annotation and avoid relying on Spring Data to translate the method name into the query. Using the name translation approach could come with difficulties:
+  1-It creates long and difficult-to-read method names for more complex operations, which affect the app’s maintainability.
+  2- t slows down the app’s initialization because the app needs now to also translate the method names.
+  3– You need to learn the Spring Data method name convention. 
+  4– It runs the risk of affecting the app’s behavior by an incorrect refactor of the method name.
+- Any operation that changes data (e.g., executes INSERT, UPDATE, or DELETE queries) must be annotated with the @Modifying annotation to instruct Spring Data that the operation changes data records.

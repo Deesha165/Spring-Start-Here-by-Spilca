@@ -1,0 +1,7 @@
+- **Spring Core** is the part of the Spring framework that provides the foundational mechanisms to integrate into apps. it contains some capabilities such as **Spring context** which is a fundamental capability of the Spring framework that enables Spring to manage instances of your app. and **The Spring Expression Language (SpEL)** is another capability you’ll find as part of Spring Core, which enables you to describe configurations for Spring using a specific language.
+-  **Spring model-view-controller (MVC)**—The part of the Spring framework that enables you to develop web applications that serve HTTP requests. We’ll use Spring MVC starting in chapter 7
+- **Spring Data Access**—Also one of the fundamental parts of Spring. It provides basic tools you can use to connect to SQL databases to implement the persistence layer of your app. We’ll use Spring Data Access starting in chapter 13. 
+- **Spring testing**—The part holding the tools you need to write tests for your Spring application. We’ll discuss this subject in chapter 15.
+- **Spring Boot** is a project part of the Spring ecosystem that introduces the concept of “convention over configuration.” The main idea of this concept is that instead of setting up all the configurations of a framework yourself, Spring Boot offers you a default configuration that you can customize as needed.
+- **Mavin** is a tool used for managing app build process.
+- 

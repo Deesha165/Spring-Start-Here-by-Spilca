@@ -1,0 +1,4 @@
+ - In **eager instantiation** Spring creates all singleton beans when it initializes the context
+ - In **lazy instantiation** instance is get when it is first accessed.
+ - **Eager Instantiation** is better for reliability and readiness, as it ensures all beans are initialized and validated at startup.
+- **Lazy Instantiation** is better for optimizing startup performance and resource usage, especially in modular applications where many components might not be needed during every execution.

@@ -1,0 +1,3 @@
+- A **servlet container** (e.g., Tomcat) speaks HTTP. It translates the HTTP request to our Spring app and the app’s response into an HTTP response. This way, we don’t need to care about the protocol used for communication on the network, as we simply write everything as Java objects and methods.
+- Servlet uses Tomcat which is the server that is responsible for communication layer between client and server.
+- 

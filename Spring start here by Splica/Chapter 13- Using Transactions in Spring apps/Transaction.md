@@ -1,0 +1,6 @@
+- A **transaction** is a set of operations that change data, which either execute together or not at all. In a real-world scenario, almost any use case should be the subject of a transaction to avoid data inconsistencies.
+-  If any of the operations fail, the app restores the data to how it was at the beginning of the transaction. When that happens, we say that the transaction rolls back. 
+- If all the operations succeed, we say the transaction commits, which means the app persists all the changes the use case execution did.
+- to implment transactional code in Spring, you use the @Transactional annotation. You use the @Transactional annotation to mark a method you expect Spring to wrap in a transaction. You can also annotate a class with @Transactional to tell Spring that any class methods need to be transactional.
+- Spring aspect intercepts the methods annotated with @Transactional. The aspect starts the transaction, and if an exception occurs the aspect rolls back the transaction. If the method doesn’t throw an exception, the transaction commits, and the app persists the method’s changes.
+- Behind the scene @Transactional creates an aspect for method decorated with that annotation inside try catch block starts transaction then executing method then commit and if run time exception occurred it rolls back to the state before transaction. 
